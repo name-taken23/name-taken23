@@ -1,0 +1,51 @@
+html {
+  line-height: 1.15;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  color: #333;
+  line-height: 1.42857143;
+  margin: auto;
+  background-color: #fefefe;
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 1.875rem;
+}
+
+.container {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.card-body {
+  padding: 0px !important;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
