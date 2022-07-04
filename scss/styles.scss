@@ -27,12 +27,19 @@
   }
 }
 //includes 
+@import 'partials/sidebarnav';
+@import 'partials/contact';
 @import 'partials/bannerimg';
+@import 'partials/projects';
 //content
+#content-wrapper {
+  margin-left: 160px;
+}
 
 html {
   line-height: 1.15;
   font-size: 16px;
+  overflow: visible;
 }
 
 *,
@@ -44,14 +51,14 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  
   font-size: 1rem;
   letter-spacing: 0.4px;
   color: #333;
   line-height: 1.42857143;
   margin: auto;
   background-color: #fefefe;
-  overflow: hidden;
+ 
 }
 
 ul {
@@ -70,7 +77,12 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
-
+.img-rounded {
+  border-radius: 50%;
+}
+.card {
+  margin: 10px;
+}
 .card-body {
   padding: 0px !important;
   box-shadow: 0 3px 35px rgba(0, 0, 0, .1);

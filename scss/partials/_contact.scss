@@ -1,0 +1,12 @@
+@media (max-width: 992px) {
+    #contact-forum .custom-container .row {
+        flex-direction: column;
+    }
+}
+
+#contact-forum > div input {
+    width: 100%;
+}
+.identity-fields, .email-fields {
+    display: flex;
+}

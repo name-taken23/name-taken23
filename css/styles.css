@@ -23,14 +23,79 @@
     max-width: 1390px;
   }
 }
+/* Colours */
+@media (max-width: 992px) {
+  .sidenav {
+    display: none;
+  }
+  #content-wrapper {
+    margin-left: 0px !important;
+  }
+}
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #1f2022; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.sidenav > .sidenav-logo img {
+  width: 160px;
+  height: auto;
+}
+
+.sidenav > .sidenav-links a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+@media (max-width: 992px) {
+  #contact-forum .custom-container .row {
+    flex-direction: column;
+  }
+}
+#contact-forum > div input {
+  width: 100%;
+}
+
+.identity-fields, .email-fields {
+  display: flex;
+}
+
 .bannerimg {
   width: 100%;
-  height: 50vh;
+  height: 100vh;
+}
+
+.card--img {
+  width: 100%;
+  height: 300px;
+}
+
+.project-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#content-wrapper {
+  margin-left: 160px;
 }
 
 html {
   line-height: 1.15;
   font-size: 16px;
+  overflow: visible;
 }
 
 *,
@@ -42,14 +107,12 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.4px;
   color: #333;
   line-height: 1.42857143;
   margin: auto;
   background-color: #fefefe;
-  overflow: hidden;
 }
 
 ul {
@@ -66,6 +129,14 @@ p {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.img-rounded {
+  border-radius: 50%;
+}
+
+.card {
+  margin: 10px;
 }
 
 .card-body {
