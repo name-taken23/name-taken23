@@ -1,3 +1,33 @@
+@media (min-width: 576px) {
+  .custom-container {
+    max-width: 560px;
+  }
+}
+@media (min-width: 768px) {
+  .custom-container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .custom-container {
+    max-width: 982px;
+  }
+}
+@media (min-width: 1200px) {
+  .custom-container {
+    max-width: 1190px;
+  }
+}
+@media (min-width: 1400px) {
+  .custom-container {
+    max-width: 1390px;
+  }
+}
+.bannerimg {
+  width: 100%;
+  height: 50vh;
+}
+
 html {
   line-height: 1.15;
   font-size: 16px;
@@ -32,11 +62,10 @@ p {
   line-height: 1.875rem;
 }
 
-.container {
-  --bs-gutter-x: 0;
-  --bs-gutter-y: 0;
-  padding-right: 15px;
-  padding-left: 15px;
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-body {
