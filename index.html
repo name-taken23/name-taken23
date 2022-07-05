@@ -8,7 +8,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="css/styles.css">
+  
 </head>
 
 <body>
@@ -24,6 +29,9 @@
       <a href="pages/scheme.html">SCS Scheme</a>
       <a href="#contact-forum">Get in touch</a>
     </div>
+    <div class="sidenav-socials">
+      
+    </div>
   </div>
   <!--end of sidenav-->
 
@@ -35,72 +43,78 @@
       <main>
         <div id="main-wrapper">
           <div class="banner-wrapper">
-            <div class="img-wrapper">
+            <div class="img-wrapper" id="banner">
 
-              <a href="#portfolio-projects">
+              
                 <img class="bannerimg" src="assets/imgs/bannerimg.jpg">
-              </a>
+                <div class="imgtxt">
+                  <p class="h1">My name is James...</p>
+                  <p class="h5">I'm a developer.</p>
+                </div>
+                <div class="see-more">
+                  <a href="#portfolio-projects"><i class="material-icons">expand_more</i></a>
+                </div>
             </div>
           </div>
           <!-- start of portfolio projects-->
           <div id="portfolio-projects">
             <div class="custom-container">
               <div class="row">
-                <p class="h2">My Portfolio</p>
+                <i class="material-icons">code</i>
               </div>
               <div class="project-row">
                 <div class="col-md-6 col-lg-4">
                   <div class="card">
-                    <img class="card-img-top card--img" src="assets/imgs/stockimg1.png" alt="Card image cap">
+                    <img class="card--img" src="assets/imgs/stockimg1.png" alt="Card image cap">
                     <div class="card-body">
                       <p class="card-title">Project 1</p>
-                      <p class="card-subtitle">View Project</p>
+                      <p class="card-subtitle">View <i class="material-icons">data_array</i></p>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                   <div class="card">
-                    <img class="card-img-top card--img" src="assets/imgs/stockimg2.jpg" alt="Card image cap">
+                    <img class="card--img" src="assets/imgs/stockimg1.png" alt="Card image cap">
                     <div class="card-body">
                       <p class="card-title">Project 2</p>
-                      <p class="card-subtitle">View Project</p>
+                      <p class="card-subtitle">View <i class="material-icons">data_array</i></p>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                   <div class="card">
-                    <img class="card-img-top card--img" src="assets/imgs/stockimg3.jpg" alt="Card image cap">
+                    <img class="card--img" src="assets/imgs/stockimg1.png" alt="Card image cap">
                     <div class="card-body">
                       <p class="card-title">Project 3</p>
-                      <p class="card-subtitle">View Project</p>
+                      <p class="card-subtitle">View <i class="material-icons">data_array</i></p>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4">
                   <div class="card">
-                    <img class="card-img-top card--img" src="assets/imgs/stockimg4.jpg" alt="Card image cap">
+                    <img class="card--img" src="assets/imgs/stockimg1.png" alt="Card image cap">
                     <div class="card-body">
                       <p class="card-title">Project 4</p>
-                      <p class="card-subtitle">View Project</p>
+                      <p class="card-subtitle">View <i class="material-icons">data_array</i></p>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                   <div class="card">
-                    <img class="card-img-top card--img" src="assets/imgs/stockimg5.jpg" alt="Card image cap">
+                    <img class="card--img" src="assets/imgs/stockimg1.png" alt="Card image cap">
                     <div class="card-body">
                       <p class="card-title">Project 5</p>
-                      <p class="card-subtitle">View Project</p>
+                      <p class="card-subtitle">View <i class="material-icons">data_array</i></p>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                   <div class="card">
-                    <img class="card-img-top card--img" src="assets/imgs/stockimg6.jpg" alt="Card image cap">
+                    <img class="card--img" src="assets/imgs/stockimg1.png" alt="Card image cap">
                     <div class="card-body">
                       <p class="card-title">Project 6</p>
-                      <p class="card-subtitle">View Project</p>
+                      <p class="card-subtitle">View <i class="material-icons">data_array</i></p>
                     </div>
                   </div>
                 </div>
@@ -124,16 +138,16 @@
                   <div class="contact-wrapper">
                     <form id="contact-forum" method="get">
                       <div class="identity-fields">
-                        <input class="name-input" type="text" id="fname" name="fname">
-                        <input class="name-input" type="text" id="lname" name="lname">
+                        <input class="name-input" type="text" id="fname" name="fname" placeholder="First Name">
+                        <input class="name-input" type="text" id="lname" name="lname" placeholder="Last Name">
                       </div>
                       <div class="email-fields">
-                        <input class="email-input" type="email" id="emailadd" name="email">
-                        <input class="email-subject" type="text" id="msgsubject" name="emailsubject">
+                        <input class="email-address" type="email" id="emailadd" name="email" placeholder="Email:">
+                        <input class="email-subject" type="text" id="msgsubject" name="emailsubject" placeholder="Subject:">
 
-                        <input class="email-message" type="text" id="msgbody" name="emailmsg">
+                        <textarea class="email-message" type="text" id="msgbody" name="emailmsg" placeholder="Message:"></textarea>
                       </div>
-                      <a class="btn">submit</a>
+                      <a class="btn btn-primary">Submit</a>
                     </form>
 
                   </div>
@@ -142,7 +156,17 @@
             </div>
           </div>
           <!-- end of contact-forum -->
-
+          <div class="footer-wrapper">
+          <div class="custom-container">
+            <div class="row">
+              <div class="col">
+                <div class="return-top-wrapper">
+                 <a href="#banner"><i class="material-icons">expand_less</i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <!--end of main-->
     </div>

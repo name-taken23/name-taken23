@@ -23,7 +23,7 @@
 }
 @media (min-width: 1400px) {
   .custom-container {
-    max-width: 1390px;
+    max-width: 85vw;
   }
 }
 //includes 
@@ -31,9 +31,11 @@
 @import 'partials/contact';
 @import 'partials/bannerimg';
 @import 'partials/projects';
+@import 'partials/footer';
+@import 'partials/variables';
 //content
 #content-wrapper {
-  margin-left: 160px;
+  margin-left: 180px;
 }
 
 html {
@@ -51,13 +53,13 @@ html {
 }
 
 body {
-  
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.4px;
-  color: #333;
+  color: $textclr;
   line-height: 1.42857143;
   margin: auto;
-  background-color: #fefefe;
+  background-color: $baseclr;
  
 }
 
@@ -72,22 +74,23 @@ p {
 }
 
 .custom-container {
- 
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
+
 .img-rounded {
   border-radius: 50%;
 }
+
 .card {
   margin: 10px;
+  border: none;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
 }
 .card-body {
   padding: 0px !important;
-  box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
-}
-
+ }
 .form-control {
   border-radius: 0;
 }

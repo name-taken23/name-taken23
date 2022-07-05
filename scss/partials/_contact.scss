@@ -3,10 +3,59 @@
         flex-direction: column;
     }
 }
+#contact-forum {
+    
+    padding: 2rem 1rem 0 1rem;
 
-#contact-forum > div input {
-    width: 100%;
+    & a {
+        margin-top: .5rem;
+    }
+}
+.identity-fields{
+    & #fname {
+        margin-right: .5rem;
+    }
+    & input {
+   width: 100%;
+    }
+}
+
+.email-fields {
+    flex-wrap: wrap;
+    & input {
+        width: 100%;
+        margin-top: 1rem;
+        
+    }
 }
 .identity-fields, .email-fields {
     display: flex;
+}
+
+//input form fields sizing/styling 
+
+.identity-fields input, .email-fields .email-subject, .email-fields .email-address {
+    padding: 8px 8px;
+}
+#msgbody {
+    
+    margin-top: 1rem;
+    width: 100%;
+    
+    
+    padding-left: 5px;
+    padding-top: 5px;
+    &:focus {
+        min-height: 200px;
+    }
+}
+
+input[type=text], input[type=email], #msgbody{
+    font-size: 14px;
+    
+}
+.email-fields {
+    & .email-input {
+
+    }
 }

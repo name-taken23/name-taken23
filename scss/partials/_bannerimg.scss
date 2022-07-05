@@ -1,4 +1,35 @@
 .bannerimg {
   width: 100%;
   height: 100vh;
+  object-fit: cover;
+}
+.img-wrapper {
+  position: relative;
+}
+.imgtxt {
+  position: absolute;
+  top:40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  > p {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    color: $textclr;
+    &.h1 {
+      font-size: 3rem;
+    }
+    &.h5 {
+      font-size: 1.5rem;
+    }
+  }
+}
+.see-more {
+  position: absolute;
+  top: 98%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  > a i {
+    font-size: 3rem;
+    color: $textclr;
+  }
 }
