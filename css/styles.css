@@ -5,22 +5,7 @@
 }
 @media (min-width: 768px) {
   .custom-container {
-    max-width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .custom-container {
-    max-width: 982px;
-  }
-}
-@media (min-width: 1200px) {
-  .custom-container {
-    max-width: 1190px;
-  }
-}
-@media (min-width: 1400px) {
-  .custom-container {
-    max-width: 85vw;
+    max-width: 80vw;
   }
 }
 /* Colours */
@@ -43,7 +28,6 @@
   left: 0;
   background-color: #1f2022;
   border-right: #ccd9ff 1px solid;
-  overflow-x: hidden;
   /* Disable horizontal scroll */
 }
 .sidenav > .sidenav-links {
@@ -71,7 +55,7 @@
 }
 
 @media (max-width: 992px) {
-  #contact-forum .custom-container .row {
+  #contact-forum-wrapper .custom-container .row {
     flex-direction: column;
   }
 }
@@ -81,6 +65,9 @@
 #contact-forum-wrapper > .custom-container {
   padding-top: 2rem;
   border-top: #99b3ff 1px solid;
+}
+#contact-forum-wrapper > .custom-container > .row {
+  justify-content: space-between;
 }
 
 .identity-fields #fname {
@@ -215,7 +202,7 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 }
 
 #portfolio-projects > .custom-container > .row > i {
-  margin: 20px 0 15px 10px;
+  margin: 20px 0 15px 0px;
   font-size: 4rem;
 }
 
@@ -281,10 +268,16 @@ p {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
 }
 
 .img-rounded {
   border-radius: 50%;
+}
+
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
 }
 
 .card {
