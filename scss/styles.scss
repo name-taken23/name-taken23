@@ -33,6 +33,7 @@
 @import 'partials/projects';
 @import 'partials/footer';
 @import 'partials/variables';
+@import 'partials/mixins';
 //content
 #content-wrapper {
   margin-left: 180px;
@@ -53,7 +54,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  @include font-site;
   font-size: 1rem;
   letter-spacing: 0.4px;
   color: $textclr;

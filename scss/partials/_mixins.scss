@@ -1,0 +1,20 @@
+@mixin box-styling-target {
+    border: darken($textclr, 10%) 1px solid;
+    color: $textclr;
+    background-color: lighten($baseclr, 10%);
+    box-shadow: 0px 0px 10px darken($textclr, 10%);
+}
+@mixin font-site {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin font-features {
+    font-family: 'Source Code Pro', monospace;
+}
+@mixin border-clr {
+    border: darken($textclr, 10%) 1px solid;
+}
+
+@mixin border-shadow {
+    box-shadow: 0px 0px 10px darken($textclr, 10%);
+}
