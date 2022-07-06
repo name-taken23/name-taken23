@@ -10,7 +10,7 @@
     padding: 1rem  2rem 1rem 2rem;
     > .custom-container {
         padding-top: 2rem;
-        border-top: darken($textclr, 10%) 1px solid;
+        
         > .row {
             justify-content: space-between;
         }
@@ -56,9 +56,9 @@
 
 input[type=text], input[type=email], #msgbody{
     font-size: 14px;
-    color: $textclr;
-    background-color: lighten($baseclr, 10%);
-    border: lighten($baseclr, 10%) 1px solid;
+    color: $clr2;
+    background-color: lighten($clr1, 10%);
+    border: lighten($clr1, 10%) 1px solid;
    
 
     &:focus {
@@ -77,15 +77,15 @@ input[type=text], input[type=email], #msgbody{
 .contact-btn {
     @include font-features;
     margin-top: 1rem;
-    color: $textclr;
-    background-color: lighten($baseclr, 10%);
-    border: lighten($baseclr, 10%) 1px solid;
+    color: $clr2;
+    background-color: lighten($clr1, 10%);
+    border: lighten($clr1, 10%) 1px solid;
     border-radius: 2%;
     letter-spacing: 1px;
 
 
     &:hover {
-        background-color: lighten($baseclr, 10%);
+        background-color: lighten($clr1, 15%);
         @include border-clr;
         
     }
@@ -96,8 +96,15 @@ input[type=text], input[type=email], #msgbody{
     }
 }
 
+.contact-info p {
+    @include font-features;
+}
+.contact-icon {
+    position: relative;
+    top: 5px;
+   
+    
+}
 .email-fields {
     margin-bottom: .5rem;
-
-  
 }

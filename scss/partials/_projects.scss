@@ -9,14 +9,16 @@
     display: flex;
     flex-wrap: wrap;
     > div > div.card {
-        background-color: transparent;
+        background-color: $clr1;
         position: relative;
         transition: top ease .5s;
         top: 0;
-       
+        border-radius: 0;
+        border-bottom: $outlineclr 2px solid;
+        
         &:hover {
             top: -10px;
-            box-shadow: 0px 1px 15px darken($textclr, 10%);
+            box-shadow: 0px 1px 15px darken($outlineclr, 10%);
             
             
         }

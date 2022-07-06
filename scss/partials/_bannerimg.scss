@@ -12,9 +12,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   > p {
-    font-family: 'Source Code Pro', monospace;
+    @include font-features;
     font-weight: 600;
-    color: $textclr;
+    color: $clr2;
     &.h1 {
       font-size: 3rem;
     }
@@ -30,6 +30,6 @@
   transform: translate(-50%, -50%);
   > a i {
     font-size: 3rem;
-    color: $textclr;
+    color: $clr2;
   }
 }

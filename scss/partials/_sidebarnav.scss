@@ -21,15 +21,14 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: $baseclr;
-  border-right: $textclr 1px solid;
+  background-color: $clr1;
+  border-right: $outlineclr 1px solid;
   
   /* Disable horizontal scroll */
 
   >.sidenav-links {
     margin-top: 2rem;
-    border-top: $textclr 1px solid;
-    border-bottom: $textclr 1px solid;
+    
 
     & a:last-child {}
   }
@@ -47,11 +46,11 @@
   margin: .5rem 0 .5rem 0;
   text-decoration: none;
   font-size: 16px;
-  color: $textclr;
+  color: $clr2;
   display: block;
 }
 
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: lighten($clr2, 10%);
 }
