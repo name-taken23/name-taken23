@@ -264,6 +264,24 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 }
 
 /* Colours */
+.about-head {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.about-head p {
+  font-family: "Source Code Pro", monospace;
+  font-size: 18px;
+}
+.about-head p > i {
+  font-size: 26px;
+  top: 5px;
+  position: relative;
+}
+
+.about-wrapper {
+  background-color: #464c5c;
+}
+
 #content-wrapper {
   margin-left: 180px;
 }
