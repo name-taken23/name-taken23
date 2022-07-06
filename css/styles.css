@@ -26,13 +26,16 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #30343f;
-  border-right: #a9bcd0 1px solid;
-  /* Disable horizontal scroll */
+  background-color: #252831;
 }
-.sidenav > .sidenav-links {
-  margin-top: 2rem;
+
+.sidenav-links {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-top: #a9bcd0 1px solid;
+  border-bottom: #a9bcd0 1px solid;
 }
+
 .sidenav > .sidenav-logo img {
   width: 180px;
   height: auto;
@@ -46,10 +49,28 @@
   font-size: 16px;
   color: #d8dbe2;
   display: block;
+  border: #252831 1px solid;
 }
 
 .sidenav a:hover {
   color: #f5f6f8;
+  background-color: #464c5c;
+  border-right: #a9bcd0 1px solid;
+  box-shadow: -5px 0 5px -5px #cad6e2 inset;
+}
+
+.sidenav-socials {
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.sidenav-socials > i {
+  margin-left: 0.5rem;
+  margin-right: auto;
+  font-size: 1.5rem;
+}
+.sidenav-socials > .socials {
+  display: none;
 }
 
 @media (max-width: 992px) {
@@ -121,7 +142,7 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   color: #d8dbe2;
   background-color: #464c5c;
   border: #464c5c 1px solid;
-  border-radius: 2%;
+  border-radius: 5%;
   letter-spacing: 1px;
 }
 .contact-btn:hover {
@@ -129,12 +150,15 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   border: #a9bcd0 0.1px solid;
 }
 .contact-btn:focus {
-  border: #f5f6f8 1px solid;
+  border: #a9bcd0 0.1px solid;
   color: #d8dbe2;
   background-color: #464c5c;
-  box-shadow: 0px 0px 10px #cad6e2;
+  box-shadow: 0px 0px 5px #cad6e2;
 }
 
+.contact-info > p.h1 {
+  font-size: 2.5rem;
+}
 .contact-info p {
   font-family: "Source Code Pro", monospace;
 }
@@ -187,6 +211,11 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   color: #d8dbe2;
 }
 
+#portfolio-projects {
+  background-color: #464c5c;
+  padding-bottom: 3rem;
+}
+
 .card--img {
   width: 100%;
   height: auto;
@@ -202,11 +231,12 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   transition: top ease 0.5s;
   top: 0;
   border-radius: 0;
-  border-bottom: #a9bcd0 2px solid;
+  border: #464c5c 1px solid;
 }
 .project-row > div > div.card:hover {
   top: -10px;
   box-shadow: 0px 1px 15px #88a2be;
+  border: #88a2be 1px solid;
 }
 
 #portfolio-projects > .custom-container > .row > i {
@@ -230,7 +260,7 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 }
 .return-top-wrapper > a > i {
   font-size: 3rem;
-  color: #30343f;
+  color: #d8dbe2;
 }
 
 /* Colours */

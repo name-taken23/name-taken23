@@ -1,11 +1,12 @@
 @import '_mixins.scss';
-
+//media queries
 @media (max-width: 992px) {
     #contact-forum-wrapper .custom-container .row {
         flex-direction: column;
     }
 }
 
+//stylings
 #contact-forum-wrapper {
     padding: 1rem  2rem 1rem 2rem;
     > .custom-container {
@@ -80,7 +81,7 @@ input[type=text], input[type=email], #msgbody{
     color: $clr2;
     background-color: lighten($clr1, 10%);
     border: lighten($clr1, 10%) 1px solid;
-    border-radius: 2%;
+    border-radius: 5%;
     letter-spacing: 1px;
 
 
@@ -96,8 +97,14 @@ input[type=text], input[type=email], #msgbody{
     }
 }
 
-.contact-info p {
+.contact-info {
+   > p.h1 {
+    font-size: 2.5rem;
+   }
+   
+    p {
     @include font-features;
+}
 }
 .contact-icon {
     position: relative;

@@ -1,8 +1,8 @@
 @mixin box-styling-target {
-    border: lighten($clr2, 10%) 1px solid;
+    border: $outlineclr .1px solid;
     color: $clr2;
     background-color: lighten($clr1, 10%);
-    box-shadow: 0px 0px 10px lighten($outlineclr, 10%);
+    box-shadow: 0px 0px 5px lighten($outlineclr, 10%);
 }
 @mixin font-site {
     font-family: 'Roboto', sans-serif;

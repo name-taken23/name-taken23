@@ -21,23 +21,19 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: $clr1;
-  border-right: $outlineclr 1px solid;
-  
-  /* Disable horizontal scroll */
-
-  >.sidenav-links {
-    margin-top: 2rem;
-    
-
-    & a:last-child {}
-  }
+  background-color: darken($clr1, 5%);
 }
-
+.sidenav-links {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border-top: $outlineclr 1px solid;
+  border-bottom: $outlineclr 1px solid;
+}
 .sidenav>.sidenav-logo img {
 
   width: 180px;
   height: auto;
+  
 }
 
 .sidenav>.sidenav-links a {
@@ -48,9 +44,34 @@
   font-size: 16px;
   color: $clr2;
   display: block;
+  border: darken($clr1, 5%) 1px solid;
 }
 
 
 .sidenav a:hover {
   color: lighten($clr2, 10%);
+  background-color: lighten($clr1, 10%);
+  border-right: $outlineclr 1px solid;
+  box-shadow:  -5px 0 5px -5px lighten($outlineclr, 10%) inset;
+}
+
+.sidenav-socials {
+  
+  
+  padding-top: .5rem;
+  display: flex;
+  flex-direction: column;
+  
+ > i {
+  margin-left: .5rem;
+  margin-right: auto;
+  font-size: 1.5rem;
+  
+  &:hover {
+
+  }
+ }
+ > .socials {
+  display: none;
+ }
 }
