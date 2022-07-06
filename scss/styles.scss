@@ -13,12 +13,13 @@
 
 //includes 
 @import 'partials/sidebarnav';
-@import 'partials/contact';
-@import 'partials/bannerimg';
-@import 'partials/projects';
-@import 'partials/footer';
+@import 'partials/indexpage/contact';
+@import 'partials/indexpage/bannerimg';
+@import 'partials/indexpage/projects';
+@import 'partials/indexpage/footer';
 @import 'partials/variables';
 @import 'partials/mixins';
+@import 'partials/aboutpage/about';
 //content
 #content-wrapper {
   margin-left: 180px;
