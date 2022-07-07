@@ -9,6 +9,7 @@
 //stylings
 #contact-forum-wrapper {
     padding: 1rem  2rem 1rem 2rem;
+    
     > .custom-container {
         padding-top: 2rem;
         
@@ -98,6 +99,7 @@ input[type=text], input[type=email], #msgbody{
 }
 
 .contact-info {
+    
    > p.h1 {
     font-size: 2.5rem;
    }
@@ -108,8 +110,9 @@ input[type=text], input[type=email], #msgbody{
 }
 .contact-icon {
     position: relative;
+    
     top: 5px;
-   
+    
     
 }
 .email-fields {

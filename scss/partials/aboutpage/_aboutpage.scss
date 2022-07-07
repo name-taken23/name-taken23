@@ -1,0 +1,60 @@
+@import '../_mixins.scss';
+
+#about-img-wrapper {
+   /* background-image: url('../assets/imgs/backgroundimg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    */
+    background-color: $clr1;
+    background-size: cover;
+}
+
+.aboutmeimg {
+
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px black;
+}
+
+.abouthead-txt {
+    @include font-features;
+    margin-top: 1rem;
+    text-align: center;
+   
+  
+}
+
+.aboutme-head {
+    padding-top: 5rem;
+    justify-content: center;
+
+
+}
+
+.aboutmecontent {
+    justify-content: center;
+
+    >div>.card {
+        background-color: $clr1;
+        border: $clr1 1px solid;
+        box-shadow: 0px 1px 15px darken($outlineclr, 10%);
+
+        >.card-body {
+            @include font-features;
+
+            >.about-card-title {
+                font-weight: 700;
+            }
+
+            >.about-card-txt {}
+        }
+    }
+}
+
+.card-body {
+    >.about-card-title, .about-card-txt {
+        padding: 0px 5px 0px 15px;
+    }
+}

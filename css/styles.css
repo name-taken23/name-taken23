@@ -27,6 +27,7 @@
   top: 0;
   left: 0;
   background-color: #252831;
+  box-shadow: 5px 0 5px -5px black;
 }
 
 .sidenav-links {
@@ -180,6 +181,7 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 
 .img-wrapper {
   position: relative;
+  box-shadow: 0 3px 10px -5px black;
 }
 
 .imgtxt {
@@ -210,6 +212,9 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   font-size: 3rem;
   color: #d8dbe2;
 }
+.see-more > a i:hover {
+  color: #bbc0cc;
+}
 
 #portfolio-projects {
   background-color: #464c5c;
@@ -231,7 +236,8 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   transition: top ease 0.5s;
   top: 0;
   border-radius: 0;
-  border: #464c5c 1px solid;
+  border: #30343f 1px solid;
+  box-shadow: 0 0px 10px 1px #30343f;
 }
 .project-row > div > div.card:hover {
   top: -10px;
@@ -242,6 +248,7 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 #portfolio-projects > .custom-container > .row > i {
   margin: 20px 0 15px 0px;
   font-size: 4rem;
+  border-bottom: 1px solid #d8dbe2;
 }
 
 .card-title, .card-subtitle {
@@ -264,22 +271,83 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 }
 
 /* Colours */
-.about-head {
-  margin-left: 1rem;
-  margin-top: 1rem;
-}
-.about-head p {
-  font-family: "Source Code Pro", monospace;
-  font-size: 18px;
-}
-.about-head p > i {
-  font-size: 26px;
-  top: 5px;
-  position: relative;
+#about-img-wrapper {
+  /* background-image: url('../assets/imgs/backgroundimg.jpg');
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   */
+  background-color: #30343f;
+  background-size: cover;
 }
 
-.about-wrapper {
-  background-color: #464c5c;
+.aboutmeimg {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 1px black;
+}
+
+.abouthead-txt {
+  font-family: "Source Code Pro", monospace;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.aboutme-head {
+  padding-top: 5rem;
+  justify-content: center;
+}
+
+.aboutmecontent {
+  justify-content: center;
+}
+.aboutmecontent > div > .card {
+  background-color: #30343f;
+  border: #30343f 1px solid;
+  box-shadow: 0px 1px 15px #88a2be;
+}
+.aboutmecontent > div > .card > .card-body {
+  font-family: "Source Code Pro", monospace;
+}
+.aboutmecontent > div > .card > .card-body > .about-card-title {
+  font-weight: 700;
+}
+.card-body > .about-card-title, .card-body .about-card-txt {
+  padding: 0px 5px 0px 15px;
+}
+
+.imgtxt {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.imgtxt > p {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+  color: #d8dbe2;
+}
+.imgtxt > p.h1 {
+  font-size: 3rem;
+}
+
+.schemecontent {
+  justify-content: center;
+}
+.schemecontent > div > .card {
+  background-color: #30343f;
+  border: #30343f 1px solid;
+  box-shadow: 0px 1px 15px #88a2be;
+}
+.schemecontent > div > .card > .card-body {
+  font-family: "Roboto", sans-serif;
+}
+.schemecontent > div > .card > .card-body > .scheme-card-title {
+  font-weight: 700;
+}
+.card-body > .scheme-card-title, .card-body .scheme-card-txt {
+  padding: 0px 5px 0px 15px;
 }
 
 #content-wrapper {
@@ -348,6 +416,36 @@ p {
 
 .form-control {
   border-radius: 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.h1,
+h1 {
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+
+.h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #333645;
 }
 
 /*# sourceMappingURL=styles.css.map */

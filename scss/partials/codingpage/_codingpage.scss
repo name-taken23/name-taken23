@@ -1,0 +1,19 @@
+
+//styles 
+.imgtxt {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    >p {
+        @include font-features;
+        font-weight: 600;
+        color: $clr2;
+
+        &.h1 {
+            font-size: 3rem;
+        }
+
+    }
+}

@@ -17,7 +17,8 @@
         transition: top ease .5s;
         top: 0;
         border-radius: 0;
-        border: lighten($clr1, 10%) 1px solid;
+        border: $clr1 1px solid;
+        box-shadow:  0 0px 10px 1px $clr1;
         
         &:hover {
             top: -10px;
@@ -32,6 +33,7 @@
     
     margin: 20px 0 15px 0px;
     font-size: 4rem;
+    border-bottom: 1px solid $clr2;
 }
 
 .card-title, .card-subtitle {
