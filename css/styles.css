@@ -37,9 +37,18 @@
   border-bottom: #a9bcd0 1px solid;
 }
 
-.sidenav > .sidenav-logo img {
-  width: 180px;
-  height: auto;
+.sidenav > .sidenav-logo > .logo {
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+}
+.sidenav > .sidenav-logo > .logo > a {
+  font-size: 5rem;
+  text-decoration: none;
+  color: #d8dbe2;
+}
+.sidenav > .sidenav-logo > .logo > a:hover {
+  color: #bbc0cc;
+  text-decoration: underline #bbc0cc;
 }
 
 .sidenav > .sidenav-links a {
@@ -53,7 +62,7 @@
   border: #252831 1px solid;
 }
 
-.sidenav a:hover {
+.sidenav > .sidenav-links a:hover {
   color: #f5f6f8;
   background-color: #464c5c;
   border-right: #a9bcd0 1px solid;
@@ -299,9 +308,6 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   justify-content: center;
 }
 
-.aboutmecontent {
-  justify-content: center;
-}
 .aboutmecontent > div > .card {
   background-color: #30343f;
   border: #30343f 1px solid;
@@ -382,6 +388,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  line-height: 1.875rem;
 }
 
 p {

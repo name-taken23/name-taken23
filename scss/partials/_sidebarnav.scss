@@ -24,17 +24,30 @@
   background-color: darken($clr1, 5%);
   box-shadow: 5px 0 5px -5px black;
 }
+
 .sidenav-links {
   padding-top: .5rem;
   padding-bottom: .5rem;
   border-top: $outlineclr 1px solid;
   border-bottom: $outlineclr 1px solid;
 }
-.sidenav>.sidenav-logo img {
 
-  width: 180px;
-  height: auto;
-  
+.sidenav>.sidenav-logo>.logo {
+  @include font-features;
+  text-align: center;
+
+  >a {
+
+    font-size: 5rem;
+    text-decoration: none;
+    color: $clr2;
+
+    &:hover {
+      color: darken($clr2, 10%);
+      text-decoration: underline darken($clr2, 10%);
+    }
+  }
+
 }
 
 .sidenav>.sidenav-links a {
@@ -49,30 +62,29 @@
 }
 
 
-.sidenav a:hover {
+.sidenav>.sidenav-links a:hover {
   color: lighten($clr2, 10%);
   background-color: lighten($clr1, 10%);
   border-right: $outlineclr 1px solid;
-  box-shadow:  -5px 0 5px -5px lighten($outlineclr, 10%) inset;
+  box-shadow: -5px 0 5px -5px lighten($outlineclr, 10%) inset;
 }
 
 .sidenav-socials {
-  
-  
+
+
   padding-top: .5rem;
   display: flex;
   flex-direction: column;
-  
- > i {
-  margin-left: .5rem;
-  margin-right: auto;
-  font-size: 1.5rem;
-  
-  &:hover {
 
+  >i {
+    margin-left: .5rem;
+    margin-right: auto;
+    font-size: 1.5rem;
+
+    &:hover {}
   }
- }
- > .socials {
-  display: none;
- }
+
+  >.socials {
+    display: none;
+  }
 }
