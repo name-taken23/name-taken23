@@ -83,7 +83,7 @@
   display: none;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 990px) {
   #contact-forum-wrapper .custom-container .row {
     flex-direction: column;
   }
@@ -169,17 +169,24 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 .contact-info > p.h1 {
   font-size: 2.5rem;
 }
-.contact-info p {
+.contact-info div, .contact-info p {
   font-family: "Source Code Pro", monospace;
 }
 
 .contact-icon {
   position: relative;
-  top: 5px;
 }
 
 .email-fields {
   margin-bottom: 0.5rem;
+}
+
+.contact-info-wrap {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.contact-info-wrap > i {
+  margin-right: 5px;
 }
 
 .bannerimg {
@@ -293,7 +300,6 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 .aboutmeimg {
   height: 200px;
   width: 200px;
-  border-radius: 50%;
   box-shadow: 0 0 10px 1px black;
 }
 
@@ -303,15 +309,28 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   text-align: center;
 }
 
+.about-head-wrap {
+  background-color: #1a1c22;
+  box-shadow: 0 6px 5px -5px black;
+}
+
 .aboutme-head {
-  padding-top: 5rem;
+  padding-top: 2rem;
   justify-content: center;
 }
 
-.aboutmecontent > div > .card {
+.aboutmecontent {
+  justify-content: center;
+  height: 100%;
   background-color: #30343f;
-  border: #30343f 1px solid;
-  box-shadow: 0px 1px 15px #88a2be;
+}
+.aboutmecontent:first-child {
+  margin-top: 2rem;
+}
+.aboutmecontent > div > .card {
+  background-color: #3b404d;
+  border: #3b404d 1px solid;
+  box-shadow: 0px 1px 15px black;
 }
 .aboutmecontent > div > .card > .card-body {
   font-family: "Source Code Pro", monospace;
@@ -338,16 +357,48 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   font-size: 3rem;
 }
 
+.schemeimg {
+  height: 200px;
+  width: 200px;
+  box-shadow: 0 0 10px 1px black;
+}
+
+.scheme-txt {
+  font-family: "Source Code Pro", monospace;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.scheme-head-wrap {
+  background-color: #1a1c22;
+  box-shadow: 0 6px 5px -5px black;
+  margin-bottom: 2rem;
+}
+
+.scheme-head {
+  padding-top: 2rem;
+  justify-content: center;
+}
+
+.th-link {
+  text-decoration: underline;
+  color: inherit;
+}
+.th-link:hover {
+  color: #acb3c1;
+  text-decoration: underline;
+}
+
 .schemecontent {
   justify-content: center;
 }
 .schemecontent > div > .card {
-  background-color: #30343f;
-  border: #30343f 1px solid;
-  box-shadow: 0px 1px 15px #88a2be;
+  background-color: #3b404d;
+  border: #3b404d 1px solid;
+  box-shadow: 0px 1px 15px black;
 }
 .schemecontent > div > .card > .card-body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Source Code Pro", monospace;
 }
 .schemecontent > div > .card > .card-body > .scheme-card-title {
   font-weight: 700;

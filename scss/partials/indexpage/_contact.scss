@@ -1,6 +1,6 @@
 @import '../_mixins.scss';
 //media queries
-@media (max-width: 992px) {
+@media (max-width: 990px) {
     #contact-forum-wrapper .custom-container .row {
         flex-direction: column;
     }
@@ -39,6 +39,7 @@
 .identity-fields, .email-fields {
     display: flex;
 }
+
 
 //input form fields sizing/styling 
 
@@ -104,17 +105,22 @@ input[type=text], input[type=email], #msgbody{
     font-size: 2.5rem;
    }
    
-    p {
+    div, p {
     @include font-features;
 }
 }
 .contact-icon {
     position: relative;
-    
-    top: 5px;
-    
-    
+  
 }
 .email-fields {
     margin-bottom: .5rem;
+}
+
+.contact-info-wrap {
+    display: flex;
+    margin-bottom: 1rem;
+    > i {
+        margin-right: 5px;
+    }
 }
