@@ -1,13 +1,13 @@
 @import '../_mixins.scss';
 //media queries
 @media (max-width: 990px) {
-    #contact-forum-wrapper .custom-container .row {
+    #contact-form-wrapper .custom-container .row {
         flex-direction: column;
     }
 }
 
 //stylings
-#contact-forum-wrapper {
+#contact-form-wrapper {
     padding: 1rem  2rem 1rem 2rem;
     
     > .custom-container {

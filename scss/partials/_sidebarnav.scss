@@ -2,7 +2,7 @@
 @import '_mixins.scss';
 
 @media (max-width: 992px) {
-  .sidenav {
+  .custom-navbar {
     display: none;
   }
 
@@ -12,33 +12,36 @@
 }
 
 
-.sidenav {
-  height: 100%;
-  width: 180px;
+.custom-navbar {
+  height: auto;
+  width: 100%;
   /* Set the width of the sidebar */
   position: fixed;
   /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1;
   top: 0;
   left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: darken($clr1, 5%);
   box-shadow: 5px 0 5px -5px black;
 }
 
-.sidenav-links {
+.custom-navbar-links {
   padding-top: .5rem;
   padding-bottom: .5rem;
   border-top: $outlineclr 1px solid;
   border-bottom: $outlineclr 1px solid;
 }
 
-.sidenav>.sidenav-logo>.logo {
+.custom-navbar>.custom-navbar-logo>.logo {
   @include font-features;
   text-align: center;
 
   >a {
 
-    font-size: 5rem;
+    font-size: 1rem;
     text-decoration: none;
     color: $clr2;
 
@@ -50,31 +53,31 @@
 
 }
 
-.sidenav>.sidenav-links a {
+.custom-navbar>.custom-navbar-links a {
   @include font-features;
   padding: 4px 12px 4px 12px;
   margin: .5rem 0 .5rem 0;
   text-decoration: none;
   font-size: 16px;
   color: $clr2;
-  display: block;
+  display: inline;
   border: darken($clr1, 5%) 1px solid;
 }
 
 
-.sidenav>.sidenav-links a:hover {
+.custom-navbar>.custom-navbar-links a:hover {
   color: lighten($clr2, 10%);
   background-color: lighten($clr1, 10%);
   border-right: $outlineclr 1px solid;
   box-shadow: -5px 0 5px -5px lighten($outlineclr, 10%) inset;
 }
 
-.sidenav-socials {
+.custom-navbar-socials {
 
 
   padding-top: .5rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
   >i {
     margin-left: .5rem;
