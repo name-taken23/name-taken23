@@ -1,14 +1,12 @@
 @import '_variables.scss';
 @import '_mixins.scss';
 
-@media (max-width: 992px) {
+@media (max-width: 998px) {
   .custom-navbar {
-    display: none;
+    display: hidden!important;
   }
 
-  #content-wrapper {
-    margin-left: 0px !important;
-  }
+ 
 }
 
 
@@ -19,35 +17,41 @@
   position: fixed;
   /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1;
-  top: 0;
+  top: -100px;
   left: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: darken($clr1, 5%);
-  box-shadow: 5px 0 5px -5px black;
+  align-items: baseline;
+  justify-content: space-between;
+  background-color: darken($clr1, 5%);  
+  box-shadow: 0px 7px 5px -5px black;
+  transition: top 0.3s;
 }
 
 .custom-navbar-links {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  border-top: $outlineclr 1px solid;
-  border-bottom: $outlineclr 1px solid;
+  
+  
+  
+  
 }
 
 .custom-navbar>.custom-navbar-logo>.logo {
   @include font-features;
   text-align: center;
-
+  
+  
   >a {
-
-    font-size: 1rem;
+    
+    padding: 3px 20px 6px 20px ;
+    font-size: 2rem;
     text-decoration: none;
     color: $clr2;
+    
 
     &:hover {
-      color: darken($clr2, 10%);
-      text-decoration: underline darken($clr2, 10%);
+      color: lighten($clr2, 10%);
+    background-color: lighten($clr1, 10%);
+    border-right: $outlineclr 1px solid;
+    box-shadow: -5px 0px 5px -5px lighten($outlineclr, 10%) inset;
     }
   }
 
@@ -55,36 +59,42 @@
 
 .custom-navbar>.custom-navbar-links a {
   @include font-features;
-  padding: 4px 12px 4px 12px;
-  margin: .5rem 0 .5rem 0;
+  padding: 16px 12px 10px 12px;
+ 
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   color: $clr2;
   display: inline;
-  border: darken($clr1, 5%) 1px solid;
+  //border: darken($clr1, 5%) 1px solid;
 }
 
 
 .custom-navbar>.custom-navbar-links a:hover {
   color: lighten($clr2, 10%);
   background-color: lighten($clr1, 10%);
-  border-right: $outlineclr 1px solid;
-  box-shadow: -5px 0 5px -5px lighten($outlineclr, 10%) inset;
+  border-bottom: $outlineclr 1px solid;
+  box-shadow: 0px -5px 5px -5px lighten($outlineclr, 10%) inset;
 }
 
 .custom-navbar-socials {
 
 
-  padding-top: .5rem;
+ 
   display: flex;
   flex-direction: row;
-
+  margin-right: 1rem;
+  
   >i {
-    margin-left: .5rem;
-    margin-right: auto;
+    
     font-size: 1.5rem;
+    padding: 8px 15px 6px 15px;
 
-    &:hover {}
+    &:hover {
+      color: lighten($clr2, 10%);
+      background-color: lighten($clr1, 10%);
+      border-bottom: $outlineclr 1px solid;
+      box-shadow: 0px -5px 5px -5px lighten($outlineclr, 10%) inset;
+    }
   }
 
   >.socials {

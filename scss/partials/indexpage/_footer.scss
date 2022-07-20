@@ -1,10 +1,21 @@
 .return-top-wrapper {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     text-align: center;
-        & > a > i {
+        & > a i {
         font-size: 3rem;
         color: $clr2;
+        padding: 10px 10px 10px 10px;
+
+        &:hover {
+            animation: bounce 1s infinite;
+        }
         
     }
 }
 
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-25px); }
+    100% { transform: translateY(0); }
+  }
+  

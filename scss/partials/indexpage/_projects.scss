@@ -1,6 +1,7 @@
 #portfolio-projects {
     background-color: lighten($clr1, 10%);
     padding-bottom: 3rem;
+    padding-top: 2rem;
 }
 .card--img {
     width: 100%;
@@ -9,8 +10,11 @@
     
 }
 .project-row {
-    display: flex;
+    
     flex-wrap: wrap;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
     > div > div.card {
         background-color: $clr1;
         position: relative;
