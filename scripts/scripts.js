@@ -1,6 +1,4 @@
 //Form validation.
-
-
 $('.contact-btn').on('click', (e) => {
     e.preventDefault();
     let contactForm = {
@@ -45,13 +43,25 @@ $('.contact-btn').on('click', (e) => {
 
 //navbar scroll
 $(window).on('scroll', () => {
-    let bannerH = $('.banner-wrapper').height() - 100;
-    if (document.body.scrollTop > bannerH || document.documentElement.scrollTop > bannerH) {
+    let winWidth = window.innerWidth;
+    if (document.documentElement.scrollTop && winWidth > 998) {
         document.getElementById("custom-navbar").style.top = "0";
     } else {
         document.getElementById("custom-navbar").style.top = "-100px";
     }
 });
+
+//mobile navbar scroll
+$(window).on('scroll', () => {
+        if(document.documentElement.scrollTop){
+            document.getElementById("custom-mobile-navbar").style.bottom = "0";
+        } else {
+            document.getElementById("custom-mobile-navbar").style.bottom = "-100px";
+        }
+
+
+});
+
 //navbar hide on window resize.
 $(window).resize(() => {
     if ($(this).width() >= 981) {
@@ -64,11 +74,12 @@ $(window).resize(() => {
 
 
 //collapsible
-var coll = document.getElementsByClassName("collapsible");
-var i;
+
+let coll = document.getElementsByClassName("collapsible");
+let i;
 $(window).on('scroll', function () {
-    let bannerH = $('.banner-wrapper').height() - 350;
-    console.log(document.documentElement.scrollTop);
+    let bannerH = $('.banner-wrapper').height() - 400;
+   
         for (i = 0; i < coll.length; i++) {
             coll.item(0).classList.toggle("active");
             var content = coll.item(0).nextElementSibling;
@@ -83,3 +94,4 @@ $(window).on('scroll', function () {
         }
     
 });
+

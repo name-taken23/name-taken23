@@ -5,7 +5,9 @@
   .custom-navbar {
     display: hidden!important;
   }
-
+  .custom-mobile-navbar {
+    display: flex!important;
+  }
  
 }
 
@@ -18,7 +20,7 @@
   /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1;
   top: -100px;
-  left: 0;
+  
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -27,12 +29,6 @@
   transition: top 0.3s;
 }
 
-.custom-navbar-links {
-  
-  
-  
-  
-}
 
 .custom-navbar>.custom-navbar-logo>.logo {
   @include font-features;
@@ -100,4 +96,23 @@
   >.socials {
     display: none;
   }
+}
+
+//mobile navbar
+.custom-mobile-navbar {
+  height: auto;
+  width: 100%;
+  position: fixed;
+  bottom: -100px;
+  z-index: 1;
+  display: none;
+  justify-content: space-evenly;
+  background-color: darken($clr1, 5%);  
+  transition: bottom 0.3s;
+    > i {
+      font-size: 1.5rem;
+      width: auto;
+      padding: 7px 7px 7px 7px;
+    }
+  
 }
