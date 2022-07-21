@@ -47,7 +47,7 @@ $(window).on('scroll', () => {
     if (document.documentElement.scrollTop && winWidth > 998) {
         document.getElementById("custom-navbar").style.top = "0";
     } else {
-        document.getElementById("custom-navbar").style.top = "-100px";
+        document.getElementById("custom-navbar").style.top = "-400px";
     }
 });
 

@@ -24,12 +24,11 @@
   position: fixed;
   /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1;
-  top: -100px;
+  top: -400px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  background-color: #252831;
-  box-shadow: 0px 7px 5px -5px black;
+  background-color: transparent;
   transition: top 0.3s;
 }
 
@@ -293,6 +292,16 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   }
   100% {
     transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  #portfolio-projects .custom-container .project-row {
+    transition-duration: 3s !important;
+  }
+}
+@media (max-width: 998px) {
+  #portfolio-projects .custom-container .project-row {
+    transition-duration: 2s;
   }
 }
 #portfolio-projects {

@@ -1,3 +1,15 @@
+@media (max-width: 768px) {
+    #portfolio-projects .custom-container .project-row {
+        transition-duration:  3s!important;
+    }
+  }
+
+@media (max-width: 998px) {
+    #portfolio-projects .custom-container .project-row {
+        transition-duration: 2s ;
+    }
+}
+
 #portfolio-projects {
     background-color: lighten($clr1, 10%);
     padding-bottom: 3rem;
