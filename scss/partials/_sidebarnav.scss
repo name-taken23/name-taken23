@@ -3,12 +3,13 @@
 
 @media (max-width: 998px) {
   .custom-navbar {
-    display: hidden!important;
+    display: hidden !important;
   }
+
   .custom-mobile-navbar {
-    display: flex!important;
+    display: flex !important;
   }
- 
+
 }
 
 
@@ -20,12 +21,12 @@
   /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1;
   top: -400px;
-  
+
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  background-color: transparent;  
-  
+  background-color: darken($clr1, 5%);
+
   transition: top 0.3s;
 }
 
@@ -33,21 +34,21 @@
 .custom-navbar>.custom-navbar-logo>.logo {
   @include font-features;
   text-align: center;
-  
-  
+
+
   >a {
-    
-    padding: 3px 20px 6px 20px ;
+
+    padding: 3px 20px 6px 20px;
     font-size: 2rem;
     text-decoration: none;
     color: $clr2;
-    
+
 
     &:hover {
       color: lighten($clr2, 10%);
-    background-color: lighten($clr1, 10%);
-    border-right: $outlineclr 1px solid;
-    box-shadow: -5px 0px 5px -5px lighten($outlineclr, 10%) inset;
+      background-color: lighten($clr1, 10%);
+      border-right: $outlineclr 1px solid;
+      box-shadow: -5px 0px 5px -5px lighten($outlineclr, 10%) inset;
     }
   }
 
@@ -56,12 +57,14 @@
 .custom-navbar>.custom-navbar-links a {
   @include font-features;
   padding: 16px 12px 10px 12px;
- 
+
   text-decoration: none;
   font-size: 18px;
   color: $clr2;
   display: inline;
-  //border: darken($clr1, 5%) 1px solid;
+
+ 
+  
 }
 
 
@@ -75,21 +78,31 @@
 .custom-navbar-socials {
 
 
- 
+
   display: flex;
   flex-direction: row;
   margin-right: 1rem;
-  
+
   >i {
-    
+    border-bottom: $clr1 1px solid;
     font-size: 1.5rem;
     padding: 8px 15px 6px 15px;
-
+    
     &:hover {
       color: lighten($clr2, 10%);
       background-color: lighten($clr1, 10%);
       border-bottom: $outlineclr 1px solid;
       box-shadow: 0px -5px 5px -5px lighten($outlineclr, 10%) inset;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  
+    &:focus-visible {
+      outline: none;
+      box-shadow: none;
     }
   }
 
@@ -107,12 +120,26 @@
   z-index: 1;
   display: none;
   justify-content: space-evenly;
-  background-color: darken($clr1, 5%);  
+  background-color: darken($clr1, 5%);
+
   transition: bottom 0.3s;
-    > i {
+
+  >a {
+    width: auto;
+    padding: 7px 3px 6px 5px;
+    color: $clr2;
+
+
+    >i {
       font-size: 1.5rem;
-      width: auto;
-      padding: 7px 7px 7px 7px;
+      border: darken($clr1, 5%) 1px solid;
+      padding: 8px 15px 10px 15px;
+      &:hover {
+        color: lighten($clr2, 10%);
+        background-color: lighten($clr1, 10%);
+        border-top: $outlineclr 1px solid;
+        box-shadow: 0px 5px 5px -5px lighten($outlineclr, 10%) inset;
+      }
     }
-  
+  }
 }

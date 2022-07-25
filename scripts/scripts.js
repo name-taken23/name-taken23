@@ -53,11 +53,11 @@ $(window).on('scroll', () => {
 
 //mobile navbar scroll
 $(window).on('scroll', () => {
-        if(document.documentElement.scrollTop){
-            document.getElementById("custom-mobile-navbar").style.bottom = "0";
-        } else {
-            document.getElementById("custom-mobile-navbar").style.bottom = "-100px";
-        }
+    if (document.documentElement.scrollTop) {
+        document.getElementById("custom-mobile-navbar").style.bottom = "0";
+    } else {
+        document.getElementById("custom-mobile-navbar").style.bottom = "-100px";
+    }
 
 
 });
@@ -75,23 +75,33 @@ $(window).resize(() => {
 
 //collapsible
 
-let coll = document.getElementsByClassName("collapsible");
-let i;
-$(window).on('scroll', function () {
-    let bannerH = $('.banner-wrapper').height() - 400;
-   
-        for (i = 0; i < coll.length; i++) {
-            coll.item(0).classList.toggle("active");
-            var content = coll.item(0).nextElementSibling;
-            if (document.documentElement.scrollTop < bannerH) { 
+//need to figure out a way of passing in the class name to this function
 
-                content.style.maxHeight = null;
-            } else {
-                
-                content.style.display = "flex"
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
+
+
+function collapsibleContent() {
+    let thisclass = $(this).attr('class').split(" ");
+    let coll = document.getElementsByClassName(thisclass[0]);
+   
+    let i;
+    for (i = 0; i < coll.length; i++) {
+        coll.item(0).classList.toggle("active");
+        var content = coll.item(0).nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+
+        } else {
+
+            content.style.display = "flex"
+            content.style.maxHeight = content.scrollHeight + "px";
+
         }
-    
-});
+    }
+};
+
+$('.collapsible2').on('click', collapsibleContent);
+$('.collapsible1').on('click', collapsibleContent);
+
+
+
 

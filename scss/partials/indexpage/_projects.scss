@@ -1,63 +1,99 @@
 @media (max-width: 768px) {
     #portfolio-projects .custom-container .project-row {
-        transition-duration:  3s!important;
+        transition-duration: 3s !important;
     }
-  }
+}
 
 @media (max-width: 998px) {
     #portfolio-projects .custom-container .project-row {
-        transition-duration: 2s ;
+        transition-duration: 2s;
     }
 }
 
 #portfolio-projects {
-    background-color: lighten($clr1, 10%);
+    background-image: linear-gradient(180deg, $clr1, lighten($clr1, 10%));
     padding-bottom: 3rem;
     padding-top: 2rem;
+    margin-top: 2rem;
 }
+
 .card--img {
     width: 100%;
     height: auto;
-    
-    
+
+
 }
+
 .project-row {
-    
+    padding-top: 2rem;
     flex-wrap: wrap;
     max-height: 0;
     overflow: hidden;
     transition: max-height 1s ease-out;
-    > div > div.card {
+    
+    >div>div.card {
         background-color: $clr1;
         position: relative;
         transition: top ease .5s;
         top: 0;
         border-radius: 0;
         border: $clr1 1px solid;
-        box-shadow:  0 0px 10px 1px $clr1;
-        
+        box-shadow: 0 0px 10px 1px $clr1;
+
         &:hover {
             top: -10px;
             box-shadow: 0px 1px 15px darken($outlineclr, 10%);
             border: darken($outlineclr, 10%) 1px solid;
+
+        }
+    }
+}
+
+#portfolio-projects>.custom-container>.row {
+
+   
+
+    >span {
+        @include font-features;
+        border-bottom: 1px solid $clr2;
+        display: flex;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0px -5px 3px -5px lighten($outlineclr, 10%) inset;
+                   
+        }
+        p{
+            font-size: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 0;
+            width: auto;
+        }
+        i {
+            width: auto;
+            font-size: 4rem;
             
         }
     }
 }
 
-#portfolio-projects > .custom-container > .row > i {
-    
-    margin: 20px 0 15px 0px;
-    font-size: 4rem;
-    border-bottom: 1px solid $clr2;
-}
-
-.card-title, .card-subtitle {
+.card-title,
+.card-subtitle {
     padding: 5px 0px 5px 10px;
 }
 
-.card-subtitle > i {
+.card-subtitle>i {
     position: relative;
     top: 4px;
     font-size: 20px;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
 }

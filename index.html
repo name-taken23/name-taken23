@@ -28,10 +28,10 @@
       <div class="logo"><a href="#">JR</a></div>
     </div>
     <div class="custom-navbar-links">
-      <a href="pages/about.html">About Me</a>
       <a href="#portfolio-projects">Portfolio</a>
-      <a href="pages/coding.html">Coding Examples</a>
-      <a href="pages/scheme.html">SCS Scheme</a>
+      <a href="#about-me-wrapper">About Me</a>
+
+     
       <a href="#contact-form">Contact</a>
     </div>
     <div class="custom-navbar-socials">
@@ -42,15 +42,16 @@
     </div>
   </div>
   <!--end of sidenav-->
+  <!-- mobile nav-->
   <div id="custom-mobile-navbar" class="custom-mobile-navbar">
-   
-      <i class="bi bi-code-square"></i>
-      <i class="bi bi-archive"></i>
-      <i class="bi bi-chat-left-text"></i>
-      <i class="bi bi-person-workspace"></i>
-      
-   
+
+    <a href="#portfolio-projects"><i class="bi bi-code-square"></i></a>
+    <a href=""><i class="bi bi-archive"></i></a>
+    <a href="#contact-form"><i class="bi bi-chat-left-text"></i></a>
+    <a href="#about-me-wrapper"><i class="bi bi-person-workspace"></i></a>
+
   </div>
+  <!--end of mobile nav-->
   <!--content wraps-->
   <div id="content-wrapper">
     <div class="main-content">
@@ -75,8 +76,11 @@
           <!-- start of portfolio projects-->
           <div id="portfolio-projects">
             <div class="custom-container">
-              <div class="row collapsible">
-                <i class="material-icons">code</i>
+              <div id="collapsible1" class="collapsible1 row" >
+                <span><i class="material-icons">code</i>
+                  <p> Portfolio</p>
+                </span>
+
               </div>
               <div class="project-row">
                 <div class="col-md-6 col-lg-4">
@@ -138,53 +142,116 @@
             </div>
           </div>
           <!-- end of portfolio projects-->
-          <!-- start of contact-forum -->
-          <div id="contact-form-wrapper">
-            <div class="custom-container">
-              <div class="row">
-                <div class="col-lg-4 contact-info">
-                  <p class="h1">Get In Touch!</p>
-                  <p>...if you would like to know more about me, have a question or comment about my work</p>
-                  <div class="contact-info-wrap"><i class="material-icons contact-icon">call</i> 07807992458</div>
-                  <div class="contact-info-wrap"><i class="material-icons contact-icon">email</i> jamesrreedwork@outlook.com</div>
-                  <p>Alternatively, complete the form to submit a question to me.</p>
+          <div id="about-me-wrapper">
+          <div class="custom-container">
+            <div id="collapsible2" class="collapsible2 row about-header">
+              <span><i class="material-icons">code</i>
+                <p>About</p>
+              </span>
+
+            </div>
+            <div class="row aboutmecontent">
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="about-card-title">aboutMe = </p>
+                    <p class="about-card-txt">I'm James, a junior developer and Software Engineering
+                      grad.
+                      With a lifelong interest in all things tech, and a passion for programming, I am
+                      aiming to become a Software engineer with fluency in Java, C++ and Python.
+                    </p>
+
+                  </div>
                 </div>
+              </div>
+             
+             
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <p class="about-card-title">myInterests = </p>
+                      <p class="about-card-txt">Outside of developing things for the internet, I am an
+                        hardcore gamer and PvPer. Over the years I have achieved several high
+                        ranking accounts across varying genres of games, often revolving around
+                        1-3's arena PvP. Inbetween dropping bodies, I enjoy partying up with my
+                        friends and fighting bosses!
 
-                <div class="col-lg-7">
-                  <div class="contact-wrapper">
-                    <form id="contact-form" method="get" name="contact-form">
-                      <div class="identity-fields">
-                        <input class="name-input" type="text" id="fname" name="fname" placeholder="First Name">
-                        <input class="name-input" type="text" id="lname" name="lname" placeholder="Last Name">
+                      </p>
+                    </div>
+                    </div>
+                  </div>
+             
+
+           
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <p class="about-card-title">PLACEHOLDER CONTENT</p>
+                        <p class="about-card-txt">Outside of developing things for the internet, I
+                          am an
+                          hardcore gamer and PvPer. Over the years I have achieved several high
+                          ranking
+                          positions across mobas and MMO's, and I love to socialize/party up
+                          inside of
+                          these games!
+                        </p>
                       </div>
-                      <div class="email-fields">
-                        <input class="email-address" type="email" id="emailadd" name="email" placeholder="Email:">
-                        <input class="email-subject" type="text" id="msgsubject" name="emailsubject"
-                          placeholder="Subject:">
-
-                        <textarea class="email-message" type="text" id="msgbody" name="emailmsg" placeholder="Message:"
-                          maxlength="400"></textarea>
                       </div>
-                      <button class="btn contact-btn" form="contact-forum">Submit</button>
-                    </form>
-
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- end of contact-forum -->
-          <div class="footer-wrapper">
-            <div class="custom-container">
-              <div class="row">
-                <div class="col">
-                  <div class="return-top-wrapper">
-                    <a href="#banner"><i class="material-icons">expand_less</i></a>
+          </div>
+            <!-- start of contact-forum -->
+            <div id="contact-form-wrapper">
+              <div class="custom-container">
+                <div class="row">
+                  <div class="col-lg-4 contact-info">
+                    <p class="h1">Get In Touch!</p>
+                    <p>...if you would like to know more about me, have a question or comment about my work</p>
+                    <div class="contact-info-wrap"><i class="material-icons contact-icon">call</i> 07807992458</div>
+                    <div class="contact-info-wrap"><i class="material-icons contact-icon">email</i>
+                      jamesrreedwork@outlook.com</div>
+                    <p>Alternatively, complete the form to submit a question to me.</p>
+                  </div>
+
+                  <div class="col-lg-7">
+                    <div class="contact-wrapper">
+                      <form id="contact-form" method="get" name="contact-form">
+                        <div class="identity-fields">
+                          <input class="name-input" type="text" id="fname" name="fname" placeholder="First Name">
+                          <input class="name-input" type="text" id="lname" name="lname" placeholder="Last Name">
+                        </div>
+                        <div class="email-fields">
+                          <input class="email-address" type="email" id="emailadd" name="email" placeholder="Email:">
+                          <input class="email-subject" type="text" id="msgsubject" name="emailsubject"
+                            placeholder="Subject:">
+
+                          <textarea class="email-message" type="text" id="msgbody" name="emailmsg"
+                            placeholder="Message:" maxlength="400"></textarea>
+                        </div>
+                        <button class="btn contact-btn" form="contact-forum">Submit</button>
+                      </form>
+
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+            <!-- end of contact-forum -->
+            <div class="footer-wrapper">
+              <div class="custom-container">
+                <div class="row">
+                  <div class="col">
+                    <div class="return-top-wrapper">
+                      <a href="#banner"><i class="material-icons">expand_less</i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
       </main>
       <!--end of main-->
     </div>
@@ -193,8 +260,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
-    <script src="scripts/jquery-3.6.0.min.js"></script>
-    <script src="scripts/scripts.js"></script>
+  <script src="scripts/jquery-3.6.0.min.js"></script>
+  <script src="scripts/scripts.js"></script>
 
 </body>
 
