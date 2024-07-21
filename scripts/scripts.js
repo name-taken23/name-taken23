@@ -91,13 +91,13 @@ function collapsibleContent() {
    
     let i;
     for (i = 0; i < coll.length; i++) {
-        coll.item(0).classList.toggle("active");
+        // coll.item(0).classList.toggle("active");
         var content = coll.item(0).nextElementSibling;
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
+      
+        if (content.style.maxHeight == "100%") {
+            content.style.maxHeight = "0px";
 
         } else {
-            
             content.style.display = "flex";
             content.style.maxHeight = 100 + "%";
             

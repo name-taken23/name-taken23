@@ -16,10 +16,8 @@
 .project-row {
     padding-top: 2rem;
     flex-wrap: wrap;
-    max-height: 0;
+    max-height: 0px;
     overflow: hidden;
-    
-    
     >div>div.card {
         background-color: $clr1;
         position: relative;

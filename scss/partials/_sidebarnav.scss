@@ -53,6 +53,29 @@
   }
 
 }
+.custom-navbar>.custom-navbar-logo>.logo2 {
+  @include font-features;
+  text-align: center;
+
+
+  >a {
+
+    padding: 3px 20px 6px 20px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: $clr2;
+
+
+    &:hover {
+      color: lighten($clr2, 10%);
+      background-color: lighten($clr1, 10%);
+      border-left: $outlineclr 1px solid;
+      box-shadow: 5px 0px 5px -5px lighten($outlineclr, 10%) inset;
+    }
+  }
+
+}
+
 
 .custom-navbar>.custom-navbar-links a {
   @include font-features;

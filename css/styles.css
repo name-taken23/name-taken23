@@ -49,6 +49,23 @@
   box-shadow: -5px 0px 5px -5px #cad6e2 inset;
 }
 
+.custom-navbar > .custom-navbar-logo > .logo2 {
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+}
+.custom-navbar > .custom-navbar-logo > .logo2 > a {
+  padding: 3px 20px 6px 20px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #d8dbe2;
+}
+.custom-navbar > .custom-navbar-logo > .logo2 > a:hover {
+  color: #f5f6f8;
+  background-color: #464c5c;
+  border-left: #a9bcd0 1px solid;
+  box-shadow: 5px 0px 5px -5px #cad6e2 inset;
+}
+
 .custom-navbar > .custom-navbar-links a {
   font-family: "Source Code Pro", monospace;
   padding: 16px 12px 10px 12px;
@@ -330,7 +347,7 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 .project-row {
   padding-top: 2rem;
   flex-wrap: wrap;
-  max-height: 0;
+  max-height: 0px;
   overflow: hidden;
 }
 .project-row > div > div.card {
