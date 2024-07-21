@@ -75,9 +75,15 @@ $(window).resize(() => {
 
 //collapsible
 
-//need to figure out a way of passing in the class name to this function
-
-
+//small function to control resizing of collapsibles, needs work to encapusulate and make it resuable between the elements. 
+// $(window).resize(() => {
+//     if(parseInt($('.example-content').css('max-height'), 10) > 1){
+//        var currentHeight = $(window).scrollHeight + "px";
+//        $('.example-content').css('max-height', currentHeight);
+       
+        
+//     }
+// });
 
 function collapsibleContent() {
     let thisclass = $(this).attr('class').split(" ");
@@ -91,14 +97,16 @@ function collapsibleContent() {
             content.style.maxHeight = null;
 
         } else {
-
-            content.style.display = "flex"
-            content.style.maxHeight = content.scrollHeight + "px";
+            
+            content.style.display = "flex";
+            content.style.maxHeight = 100 + "%";
+            
 
         }
     }
 };
 
+$('.collapsible3').on('click', collapsibleContent);
 $('.collapsible2').on('click', collapsibleContent);
 $('.collapsible1').on('click', collapsibleContent);
 

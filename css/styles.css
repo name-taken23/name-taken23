@@ -315,16 +315,6 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
     transform: translateY(0);
   }
 }
-@media (max-width: 768px) {
-  #portfolio-projects .custom-container .project-row {
-    transition-duration: 3s !important;
-  }
-}
-@media (max-width: 998px) {
-  #portfolio-projects .custom-container .project-row {
-    transition-duration: 2s;
-  }
-}
 #portfolio-projects {
   background-image: linear-gradient(180deg, #30343f, #464c5c);
   padding-bottom: 3rem;
@@ -342,7 +332,6 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   flex-wrap: wrap;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s ease-out;
 }
 .project-row > div > div.card {
   background-color: #30343f;
@@ -367,6 +356,9 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 }
 #portfolio-projects > .custom-container > .row > span:hover {
   box-shadow: 0px -5px 3px -5px #cad6e2 inset;
+}
+#portfolio-projects > .custom-container > .row > span:hover > p, #portfolio-projects > .custom-container > .row > span:hover i {
+  color: #9ea5b7;
 }
 #portfolio-projects > .custom-container > .row > span p {
   font-size: 2rem;
@@ -432,14 +424,12 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   background-image: linear-gradient(360deg, #30343f, #464c5c);
   padding-bottom: 3rem;
   padding-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 .aboutmecontent {
   justify-content: center;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-out;
 }
 .aboutmecontent > div > .card {
   background: inherit;
@@ -468,6 +458,9 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 }
 .about-header span:hover {
   box-shadow: 0px -5px 3px -5px #cad6e2 inset;
+}
+.about-header span:hover > p, .about-header span:hover i {
+  color: #9ea5b7;
 }
 .about-header span p {
   font-size: 2rem;
@@ -541,6 +534,75 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   padding: 0px 5px 0px 15px;
 }
 
+#example-wrapper {
+  background-image: linear-gradient(180deg, #30343f, #464c5c);
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+
+.example-content {
+  justify-content: center;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.sql__description > .code-indent {
+  display: flex;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 15px;
+  color: #c9ced7;
+  background-color: #252831;
+}
+.sql__description > .code-indent > .code-text {
+  font-family: "Source Code Pro", monospace;
+  font-size: 12px;
+}
+
+.example-header {
+  padding-bottom: 1rem;
+}
+.example-header span {
+  font-family: "Source Code Pro", monospace;
+  border-bottom: 1px solid #d8dbe2;
+  display: flex;
+  cursor: pointer;
+}
+.example-header span:hover {
+  box-shadow: 0px -5px 3px -5px #cad6e2 inset;
+}
+.example-header span:hover > p, .example-header span:hover i {
+  color: #9ea5b7;
+}
+.example-header span p {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  width: auto;
+}
+.example-header span i {
+  width: auto;
+  font-size: 4rem;
+}
+
+.example-sql-title {
+  font-family: "Source Code Pro", monospace;
+  color: inherit;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: underline #d8dbe2;
+  margin-bottom: 16px;
+}
+
+a.example-sql-title:hover {
+  color: #9ea5b7;
+  text-decoration: underline #9ea5b7;
+}
+
+.sql-dbs-img {
+  margin-top: 1rem;
+}
+
 html {
   line-height: 1.15;
   font-size: 16px;
@@ -601,8 +663,8 @@ a {
 }
 
 .row {
-  --bs-gutter-x: 0;
-  --bs-gutter-y: 0;
+  --bs-gutter-x: 15px;
+  --bs-gutter-y: 15px;
 }
 
 .card {
