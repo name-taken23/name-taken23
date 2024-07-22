@@ -44,7 +44,7 @@ $('.contact-btn').on('click', (e) => {
 //navbar scroll
 $(window).on('scroll', () => {
     let winWidth = window.innerWidth;
-    if (document.documentElement.scrollTop && winWidth > 998) {
+    if (document.documentElement.scrollTop && winWidth > 0) {
         document.getElementById("custom-navbar").style.top = "0";
     } else {
         document.getElementById("custom-navbar").style.top = "-400px";
@@ -64,7 +64,7 @@ $(window).on('scroll', () => {
 
 //navbar hide on window resize.
 $(window).resize(() => {
-    if ($(this).width() >= 981) {
+    if ($(this).width() >= 100) {
         $('.custom-navbar').show();
     }
     else {
