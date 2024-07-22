@@ -9,7 +9,7 @@
   }
 }
 /* Colours */
-@media (max-width: 998px) {
+@media (max-width: 800px) {
   .custom-navbar {
     display: hidden !important;
   }

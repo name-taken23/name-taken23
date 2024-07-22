@@ -73,6 +73,7 @@ $(window).resize(() => {
 });
 
 
+
 //collapsible
 
 //small function to control resizing of collapsibles, needs work to encapusulate and make it resuable between the elements. 
