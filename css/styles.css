@@ -94,9 +94,9 @@
 }
 .custom-navbar-socials > i:hover {
   color: white;
-  background-color: white;
+  background-color: #ff9eb5;
   border-bottom: #ffffff 1px solid;
-  box-shadow: 0px -5px 5px -5px white inset;
+  box-shadow: 0px -5px 5px -5px #e6e6e6 inset;
 }
 .custom-navbar-socials > i:focus {
   outline: none;
@@ -133,9 +133,9 @@
 }
 .custom-mobile-navbar > a > i:hover {
   color: white;
-  background-color: white;
+  background-color: #ff9eb5;
   border-top: #ffffff 1px solid;
-  box-shadow: 0px 5px 5px -5px white inset;
+  box-shadow: 0px 5px 5px -5px #e6e6e6 inset;
 }
 
 @media (max-width: 990px) {
