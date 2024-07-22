@@ -70,7 +70,7 @@
       color: darken($clr2, 10%);
       background-color: darken($clr1, 10%);
       border-left: $outlineclr 1px solid;
-      box-shadow: 5px 0px 5px -5px lighten($outlineclr, 10%) inset;
+      box-shadow: 5px 0px 5px -5px darken($outlineclr, 10%) inset;
     }
   }
 

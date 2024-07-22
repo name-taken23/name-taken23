@@ -63,7 +63,7 @@
   color: #e6e6e6;
   background-color: #ff9eb5;
   border-left: #ffffff 1px solid;
-  box-shadow: 5px 0px 5px -5px white inset;
+  box-shadow: 5px 0px 5px -5px #e6e6e6 inset;
 }
 
 .custom-navbar > .custom-navbar-links a {
@@ -269,7 +269,7 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 
 .img-wrapper {
   position: relative;
-  box-shadow: 0 3px 10px -5px black;
+  box-shadow: 0 3px 10px -5px white;
 }
 
 .imgtxt {
@@ -293,7 +293,7 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   font-size: 1.5rem;
   width: 0;
   white-space: nowrap;
-  animation: typing 2s forwards;
+  animation: typing 6s forwards;
   animation-delay: 2s;
 }
 
