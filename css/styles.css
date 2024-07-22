@@ -28,7 +28,7 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  background-color: #252831;
+  background-color: #ffb8c9;
   transition: top 0.3s;
 }
 
@@ -40,13 +40,13 @@
   padding: 3px 20px 6px 20px;
   font-size: 2rem;
   text-decoration: none;
-  color: #d8dbe2;
+  color: #ffffff;
 }
 .custom-navbar > .custom-navbar-logo > .logo > a:hover {
-  color: #f5f6f8;
-  background-color: #464c5c;
-  border-right: #a9bcd0 1px solid;
-  box-shadow: -5px 0px 5px -5px #cad6e2 inset;
+  color: #e6e6e6;
+  background-color: #ff9eb5;
+  border-right: #ffffff 1px solid;
+  box-shadow: -5px 0px 5px -5px #e6e6e6 inset;
 }
 
 .custom-navbar > .custom-navbar-logo > .logo2 {
@@ -57,13 +57,13 @@
   padding: 3px 20px 6px 20px;
   font-size: 2rem;
   text-decoration: none;
-  color: #d8dbe2;
+  color: #ffffff;
 }
 .custom-navbar > .custom-navbar-logo > .logo2 > a:hover {
-  color: #f5f6f8;
-  background-color: #464c5c;
-  border-left: #a9bcd0 1px solid;
-  box-shadow: 5px 0px 5px -5px #cad6e2 inset;
+  color: #e6e6e6;
+  background-color: #ff9eb5;
+  border-left: #ffffff 1px solid;
+  box-shadow: 5px 0px 5px -5px white inset;
 }
 
 .custom-navbar > .custom-navbar-links a {
@@ -71,15 +71,15 @@
   padding: 16px 12px 10px 12px;
   text-decoration: none;
   font-size: 18px;
-  color: #d8dbe2;
+  color: #ffffff;
   display: inline;
 }
 
 .custom-navbar > .custom-navbar-links a:hover {
-  color: #f5f6f8;
-  background-color: #464c5c;
-  border-bottom: #a9bcd0 1px solid;
-  box-shadow: 0px -5px 5px -5px #cad6e2 inset;
+  color: #e6e6e6;
+  background-color: #ff9eb5;
+  border-bottom: #ffffff 1px solid;
+  box-shadow: 0px -5px 5px -5px #e6e6e6 inset;
 }
 
 .custom-navbar-socials {
@@ -88,15 +88,15 @@
   margin-right: 1rem;
 }
 .custom-navbar-socials > i {
-  border-bottom: #30343f 1px solid;
+  border-bottom: #FFD1DC 1px solid;
   font-size: 1.5rem;
   padding: 8px 15px 6px 15px;
 }
 .custom-navbar-socials > i:hover {
-  color: #f5f6f8;
-  background-color: #464c5c;
-  border-bottom: #a9bcd0 1px solid;
-  box-shadow: 0px -5px 5px -5px #cad6e2 inset;
+  color: white;
+  background-color: white;
+  border-bottom: #ffffff 1px solid;
+  box-shadow: 0px -5px 5px -5px white inset;
 }
 .custom-navbar-socials > i:focus {
   outline: none;
@@ -118,24 +118,24 @@
   z-index: 1;
   display: none;
   justify-content: space-evenly;
-  background-color: #252831;
+  background-color: #ffb8c9;
   transition: bottom 0.3s;
 }
 .custom-mobile-navbar > a {
   width: auto;
   padding: 7px 3px 6px 5px;
-  color: #d8dbe2;
+  color: #ffffff;
 }
 .custom-mobile-navbar > a > i {
   font-size: 1.5rem;
-  border: #252831 1px solid;
+  border: #ffb8c9 1px solid;
   padding: 8px 15px 10px 15px;
 }
 .custom-mobile-navbar > a > i:hover {
-  color: #f5f6f8;
-  background-color: #464c5c;
-  border-top: #a9bcd0 1px solid;
-  box-shadow: 0px 5px 5px -5px #cad6e2 inset;
+  color: white;
+  background-color: white;
+  border-top: #ffffff 1px solid;
+  box-shadow: 0px 5px 5px -5px white inset;
 }
 
 @media (max-width: 990px) {
@@ -187,16 +187,16 @@
 
 input[type=text], input[type=email], #msgbody {
   font-size: 14px;
-  color: #d8dbe2;
-  background-color: #464c5c;
-  border: #464c5c 1px solid;
+  color: #ffffff;
+  background-color: white;
+  border: white 1px solid;
 }
 input[type=text]:focus, input[type=email]:focus, #msgbody:focus {
-  border: #a9bcd0 0.1px solid;
-  box-shadow: 0px 0px 5px #cad6e2;
+  border: #ffffff 0.1px solid;
+  box-shadow: 0px 0px 5px white;
 }
 input[type=text]:hover, input[type=email]:hover, #msgbody:hover {
-  border: #a9bcd0 0.1px solid;
+  border: #ffffff 0.1px solid;
 }
 input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-visible {
   outline: none;
@@ -205,21 +205,21 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 .contact-btn {
   font-family: "Source Code Pro", monospace;
   margin-top: 1rem;
-  color: #d8dbe2;
-  background-color: #464c5c;
-  border: #464c5c 1px solid;
+  color: #ffffff;
+  background-color: white;
+  border: white 1px solid;
   border-radius: 5%;
   letter-spacing: 1px;
 }
 .contact-btn:hover {
-  background-color: #51586a;
-  border: #a9bcd0 0.1px solid;
+  background-color: white;
+  border: #ffffff 0.1px solid;
 }
 .contact-btn:focus {
-  border: #a9bcd0 0.1px solid;
-  color: #d8dbe2;
-  background-color: #464c5c;
-  box-shadow: 0px 0px 5px #cad6e2;
+  border: #ffffff 0.1px solid;
+  color: #ffffff;
+  background-color: white;
+  box-shadow: 0px 0px 5px white;
 }
 
 .contact-info > p.h1 {
@@ -280,7 +280,7 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 .imgtxt > p {
   font-family: "Source Code Pro", monospace;
   font-weight: 600;
-  color: #d8dbe2;
+  color: #ffffff;
   overflow: hidden;
 }
 .imgtxt > p.h1 {
@@ -305,11 +305,11 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 }
 .see-more > a i {
   font-size: 3rem;
-  color: #d8dbe2;
+  color: #ffffff;
   padding: 10px 10px 10px 10px;
 }
 .see-more > a i:hover {
-  color: #bbc0cc;
+  color: #e6e6e6;
   animation: bounce 1s infinite;
 }
 
@@ -333,7 +333,7 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   }
 }
 #portfolio-projects {
-  background-image: linear-gradient(180deg, #30343f, #464c5c);
+  background-image: linear-gradient(180deg, #FFD1DC, white);
   padding-bottom: 3rem;
   padding-top: 2rem;
   margin-top: 2rem;
@@ -351,31 +351,31 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   overflow: hidden;
 }
 .project-row > div > div.card {
-  background-color: #30343f;
+  background-color: #FFD1DC;
   position: relative;
   transition: top ease 0.5s;
   top: 0;
   border-radius: 0;
-  border: #30343f 1px solid;
-  box-shadow: 0 0px 10px 1px #30343f;
+  border: #FFD1DC 1px solid;
+  box-shadow: 0 0px 10px 1px #FFD1DC;
 }
 .project-row > div > div.card:hover {
   top: -10px;
-  box-shadow: 0px 1px 15px #88a2be;
-  border: #88a2be 1px solid;
+  box-shadow: 0px 1px 15px #e6e6e6;
+  border: #e6e6e6 1px solid;
 }
 
 #portfolio-projects > .custom-container > .row > span {
   font-family: "Source Code Pro", monospace;
-  border-bottom: 1px solid #d8dbe2;
+  border-bottom: 1px solid #ffffff;
   display: flex;
   cursor: pointer;
 }
 #portfolio-projects > .custom-container > .row > span:hover {
-  box-shadow: 0px -5px 3px -5px #cad6e2 inset;
+  box-shadow: 0px -5px 3px -5px white inset;
 }
 #portfolio-projects > .custom-container > .row > span:hover > p, #portfolio-projects > .custom-container > .row > span:hover i {
-  color: #9ea5b7;
+  color: #cccccc;
 }
 #portfolio-projects > .custom-container > .row > span p {
   font-size: 2rem;
@@ -418,7 +418,7 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 }
 .return-top-wrapper > a i {
   font-size: 3rem;
-  color: #d8dbe2;
+  color: #ffffff;
   padding: 10px 10px 10px 10px;
 }
 .return-top-wrapper > a i:hover {
@@ -438,7 +438,7 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 }
 /* Colours */
 #about-me-wrapper {
-  background-image: linear-gradient(360deg, #30343f, #464c5c);
+  background-image: linear-gradient(360deg, #FFD1DC, white);
   padding-bottom: 3rem;
   padding-top: 2rem;
 }
@@ -469,15 +469,15 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 }
 .about-header span {
   font-family: "Source Code Pro", monospace;
-  border-bottom: 1px solid #d8dbe2;
+  border-bottom: 1px solid #ffffff;
   display: flex;
   cursor: pointer;
 }
 .about-header span:hover {
-  box-shadow: 0px -5px 3px -5px #cad6e2 inset;
+  box-shadow: 0px -5px 3px -5px white inset;
 }
 .about-header span:hover > p, .about-header span:hover i {
-  color: #9ea5b7;
+  color: #cccccc;
 }
 .about-header span p {
   font-size: 2rem;
@@ -499,7 +499,7 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 .imgtxt > p {
   font-family: "Source Code Pro", monospace;
   font-weight: 600;
-  color: #d8dbe2;
+  color: #ffffff;
 }
 .schemeimg {
   height: 200px;
@@ -514,7 +514,7 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 }
 
 .scheme-head-wrap {
-  background-color: #1a1c22;
+  background-color: #ff9eb5;
   box-shadow: 0 6px 5px -5px black;
   margin-bottom: 2rem;
 }
@@ -529,7 +529,7 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   color: inherit;
 }
 .th-link:hover {
-  color: #acb3c1;
+  color: #d9d9d9;
   text-decoration: underline;
 }
 
@@ -537,8 +537,8 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   justify-content: center;
 }
 .schemecontent > div > .card {
-  background-color: #3b404d;
-  border: #3b404d 1px solid;
+  background-color: #ffebef;
+  border: #ffebef 1px solid;
   box-shadow: 0px 1px 15px black;
 }
 .schemecontent > div > .card > .card-body {
@@ -552,7 +552,7 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 }
 
 #example-wrapper {
-  background-image: linear-gradient(180deg, #30343f, #464c5c);
+  background-image: linear-gradient(180deg, #FFD1DC, white);
   padding-bottom: 3rem;
   padding-top: 2rem;
 }
@@ -568,8 +568,8 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   margin-bottom: 5px;
   border-radius: 5px;
   padding: 15px;
-  color: #c9ced7;
-  background-color: #252831;
+  color: #f2f2f2;
+  background-color: #ffb8c9;
 }
 .sql__description > .code-indent > .code-text {
   font-family: "Source Code Pro", monospace;
@@ -581,15 +581,15 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
 }
 .example-header span {
   font-family: "Source Code Pro", monospace;
-  border-bottom: 1px solid #d8dbe2;
+  border-bottom: 1px solid #ffffff;
   display: flex;
   cursor: pointer;
 }
 .example-header span:hover {
-  box-shadow: 0px -5px 3px -5px #cad6e2 inset;
+  box-shadow: 0px -5px 3px -5px white inset;
 }
 .example-header span:hover > p, .example-header span:hover i {
-  color: #9ea5b7;
+  color: #cccccc;
 }
 .example-header span p {
   font-size: 2rem;
@@ -607,13 +607,13 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   color: inherit;
   font-size: 20px;
   font-weight: 400;
-  text-decoration: underline #d8dbe2;
+  text-decoration: underline #ffffff;
   margin-bottom: 16px;
 }
 
 a.example-sql-title:hover {
-  color: #9ea5b7;
-  text-decoration: underline #9ea5b7;
+  color: #cccccc;
+  text-decoration: underline #cccccc;
 }
 
 .sql-dbs-img {
@@ -638,10 +638,10 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.4px;
-  color: #d8dbe2;
+  color: #ffffff;
   line-height: 1.42857143;
   margin: auto;
-  background-color: #30343f;
+  background-color: #FFD1DC;
 }
 
 a:focus {
@@ -729,7 +729,7 @@ h1 {
 }
 
 #page-content-wrapper {
-  background-image: linear-gradient(180deg, #30343f, #464c5c);
+  background-image: linear-gradient(180deg, #FFD1DC, white);
 }
 
 /*# sourceMappingURL=styles.css.map */
