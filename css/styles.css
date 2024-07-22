@@ -289,18 +289,23 @@ input[type=text]:focus-visible, input[type=email]:focus-visible, #msgbody:focus-
   white-space: nowrap;
   animation: typing 2s forwards;
 }
-.imgtxt > p.h4 {
-  font-size: 1.5rem;
-  width: 0;
-  white-space: nowrap;
-  animation: typing 4s forwards;
-  animation-delay: 2s;
-}
 .imgtxt > p.h5 {
   font-size: 1.5rem;
-  width: 0;
   white-space: nowrap;
-  animation: typing 4s forwards;
+}
+.imgtxt > p.titleone {
+  width: 0;
+  animation: typing 2s forwards;
+  animation-delay: 2s;
+}
+.imgtxt > p.titletwo {
+  width: 0;
+  animation: typing 2s forwards;
+  animation-delay: 4s;
+}
+.imgtxt > p.titlethree {
+  width: 0;
+  animation: typing 2s forwards;
   animation-delay: 6s;
 }
 

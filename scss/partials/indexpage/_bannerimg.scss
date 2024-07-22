@@ -54,21 +54,27 @@
       white-space: nowrap;
       animation: typing 2s forwards;
     }
-    &.h4 {
-      font-size: 1.5rem;
-      width: 0;
-      white-space: nowrap;
-      animation: typing 4s forwards;
-      animation-delay: 2s;
-      
-    }
     &.h5 {
       font-size: 1.5rem;
-      width: 0;
-      white-space: nowrap;
-      animation: typing 4s forwards;
-      animation-delay: 6s;
       
+      white-space: nowrap;
+      
+      
+    }
+    &.titleone{
+      width: 0;
+      animation: typing 2s forwards;
+      animation-delay: 2s;
+    }
+    &.titletwo{
+      width: 0;
+      animation: typing 2s forwards;
+      animation-delay: 4s;
+    }
+    &.titlethree{
+      width: 0;
+      animation: typing 2s forwards;
+      animation-delay: 6s;
     }
   }
 }
